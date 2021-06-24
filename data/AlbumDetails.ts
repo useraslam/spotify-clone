@@ -10,23 +10,20 @@ export default {
     {
       id: 1,
       imageUri:
-        "https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg",
-      title: "Master of Puppets",
-      artist: "Metallica",
+        "https://cache.boston.com/resize/bonzai-fba/Globe_Photo/2011/04/14/1302796985_4480/539w.jpg",
+      artist: "Taylor Swift, Kygo Objective C, Avicii",
     },
     {
       id: 2,
       imageUri:
-        "https://images-na.ssl-images-amazon.com/images/I/71ZgMvfWOML._SX466_.jpg",
-      title: "Mothership",
-      artist: "Led Zepplin",
+        "https://cdn6.f-cdn.com/contestentries/1485199/27006121/5ca3e39ced7f1_thumb900.jpg",
+      artist: "Post Malone, Drake, Eminem",
     },
     {
       id: 3,
       imageUri:
-        "https://upload.wikimedia.org/wikipedia/en/b/b2/Metallica_-_Master_of_Puppets_cover.jpg",
-      title: "Master of Puppets",
-      artist: "Metallica",
+        "https://images-na.ssl-images-amazon.com/images/I/61F66QURFyL.jpg",
+      artist: "Journey, Escape, Avicii",
     },
     {
       id: 4,
