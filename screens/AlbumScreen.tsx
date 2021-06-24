@@ -23,6 +23,13 @@ const AlbumScreen = () => {
           </View>
         }
         keyExtractor={(item) => item.id.toString()}
+        ListFooterComponent={
+          <View
+            style={{
+              marginBottom: 100,
+            }}
+          />
+        }
       />
     </View>
   );
