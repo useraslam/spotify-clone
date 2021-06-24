@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, Pressable } from "react-native";
+import { View, Text, Image, TouchableOpacity } from "react-native";
 import { Album } from "../../types";
 import styles from "./styles";
 import { FontAwesome } from "@expo/vector-icons";
@@ -26,7 +26,7 @@ const AlbumHeader = (props: AlbumHeaderProps) => {
         <Text style={styles.by}>BY {album.by}</Text>
         <Text style={styles.by}> {album.likes} likes</Text>
       </View>
-      <Pressable
+      <TouchableOpacity
         style={{
           backgroundColor: "#1DB954",
           flex: 1,
@@ -46,7 +46,7 @@ const AlbumHeader = (props: AlbumHeaderProps) => {
           size={28}
           color="black"
         />
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 };
