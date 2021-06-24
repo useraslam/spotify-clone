@@ -16,6 +16,7 @@ import * as React from "react";
 
 import Colors from "../constants/Colors";
 import useColorScheme from "../hooks/useColorScheme";
+import AlbumScreen from "../screens/AlbumScreen";
 import TabOneScreen from "../screens/HomeScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
 import { BottomTabParamList, TabOneParamList, TabTwoParamList } from "../types";
@@ -49,7 +50,7 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Your Library"
+        name="Library"
         component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => (
@@ -72,12 +73,6 @@ export default function BottomTabNavigator() {
 
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
-function TabBarIcon(props: {
-  name: React.ComponentProps<typeof Ionicons>["name"];
-  color: string;
-}) {
-  return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
-}
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
@@ -87,10 +82,18 @@ function TabOneNavigator() {
   return (
     <TabOneStack.Navigator>
       <TabOneStack.Screen
-        name="TabOneScreen"
+        name="HomeScreen"
         component={TabOneScreen}
         options={{
           headerTitle: "Home",
+          headerTitleAlign: "center",
+        }}
+      />
+      <TabOneStack.Screen
+        name="AlbumScreen"
+        component={AlbumScreen}
+        options={{
+          headerTitle: "Album",
           headerTitleAlign: "center",
         }}
       />
